@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+body {
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+
+.terminal-container .prompt {
+    color: #ff0000; /* Warna merah untuk prompt */
+}
+
+.terminal-container .optional {
+    color: #00ff00; /* Warna hijau untuk teks opsional */
+}
+
+.terminal-container .color1 {
+    color: #ff69b4; /* Warna pink untuk baris kode 1 */
+}
+
+.terminal-container .color2 {
+    color: #add8e6; /* Warna biru muda untuk baris kode 2 */
+}
+
+.terminal-container .color3 {
+    color: #90ee90; /* Warna hijau muda untuk baris kode 3 */
+}
+
+.terminal-container .color4 {
+    color: #f0e68c; /* Warna kuning muda untuk baris kode 4 */
+}
+
+.terminal-container .color5 {
+    color: #ffa07a; /* Warna salmon untuk baris kode 5 */
+}
+
+.terminal-container pre {
+    margin: 0;
+}
+
+/* .code-container {
+    background: #000000; 
+    color: rgb(0, 255, 0); 
+    border: 2px solid rgb(0, 206, 0); 
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 50%;
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    font-family: 'Courier New', Courier, monospace; 
+    overflow-x: auto;
+}
+pre {
+    margin: 0;
+    font-size: 16px;
+    white-space: pre-wrap; 
+    text-align: left; 
+    overflow: hidden; 
+} */
+
+.code-container {
+    background: #000000; /* Warna latar belakang untuk area kode */
+    color: rgb(0, 255, 0); /* Warna teks kode */
+    border: 2px solid rgb(0, 206, 0); /* Border untuk area kode */
+    border-radius: 5px; /* Sudut border yang membulat */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 40%;
+    max-height: 400px; /* Maksimum tinggi untuk kontainer kode */
+    overflow-y: auto; /* Memungkinkan scroll vertikal */
+    overflow-x: auto; /* Menyembunyikan scroll horizontal */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Bayangan untuk efek kedalaman */
+    font-family: 'Courier New', Courier, monospace; /* Font monospace untuk efek kode */
+    white-space: pre-wrap; /* Memastikan teks kode tidak terpotong */
+    text-align: left; /* Agar kode tidak terpusat */
+}
+
+h5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    background-color: #222222;
+    border-radius: 30px;
+    width: 10em;
+    height: 40px;
+    margin: 0 auto 20px; /* Memastikan elemen h5 berada di tengah horizontal */
+    display: flex; /* Flexbox untuk sentralisasi teks */
+    align-items: center; /* Sentralisasi teks secara vertikal */
+    justify-content: center; /* Sentralisasi teks secara horizontal */
+    color: #ffffff; /* Warna teks */
+}
+
+pre {
+    margin: 0;
+    font-size: 10px;
+    text-align: left; /* Posisi teks di paling kiri */
+}
+
+
+.warning-alert {
+    background-color: #000000;
+    color: rgb(0, 255, 0);
+    padding: 10px;
+    border:  2px solid rgb(0, 255, 0);
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-bottom: 20px;
+    justify-content: space-evenly; 
+}
+
+.left-container, .right-container {
+    width: 30%; /* Full width for smaller screens */
+    max-width: 45%; /* Max width for larger screens */
+    padding: 0;
+    color: rgb(0, 206, 0);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1.5px solid #008000;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000;
+    color: rgb(0, 206, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1.2px solid rgb(0, 206, 0);
+    transition: all 200ms;
+}
+
+
+input {
+    background-color: black;
+    color: rgb(0, 255, 0);
+}
+
+button:hover {
+    background-color: rgb(0, 113, 0);
+    color: white;
+
+}
+
+#result-container {
+    margin-top: 20px;
+}
+
+#result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#result-table td {
+    border: 1px solid #21b53c;
+    padding: 10px;
+}
+
+::placeholder {
+    color: rgb(121, 0, 0);
+}
+
+iframe {
+    border: 2px solid rgb(0, 206, 0);
+}
+
+/* .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    width: 25.1em;
+}
+
+.menu-item {
+    cursor: pointer;
+    background-color: #000000;
+    color: rgb(0, 206, 0);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1.2px solid rgb(0, 206, 0);
+    display: block;
+    transition: all 200ms;
+}
+
+.menu-item:hover {
+    background-color: rgb(0, 113, 0);
+    color: #fff;
+}
+
+.arrow {
+    float: right;
+}
+
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid rgb(0, 206, 0);
+    position: absolute;
+    z-index: 1;
+}
+
+.submenu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submenu li:hover {
+    background-color: #f1f1f1;
+}
+
+.menu > li.open .submenu {
+    display: block;
+}  */
+
+/* Basic menu styles */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    width: 25.1em;
+}
+
+.menu-item {
+    cursor: pointer;
+    background-color: #000000;
+    color: rgb(0, 206, 0);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1.2px solid rgb(0, 206, 0);
+    display: block;
+    transition: all 200ms;
+}
+
+.menu-item:hover {
+    background-color: rgb(0, 113, 0);
+    color: #fff;
+}
+
+.arrow {
+    float: right;
+}
+
+/* Submenu styles */
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid rgb(0, 206, 0);
+    position: absolute;
+    z-index: 1;
+    max-height: 200px; /* Set maximum height for scrolling */
+    overflow-y: auto;  /* Enable vertical scroll if content overflows */
+}
+
+/* Custom scrollbar styles for Webkit browsers (Chrome, Safari) */
+.submenu::-webkit-scrollbar {
+    width: 12px;
+}
+
+.submenu::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 255, 0);
+    border-radius: 6px;
+}
+
+.submenu::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+/* Custom scrollbar styles for Firefox */
+.submenu {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(176, 0, 0) #000000;
+}
+
+/* List item styles */
+.submenu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submenu li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show submenu when parent is open */
+.menu > li.open .submenu {
+    display: block;
+}
+
+/* Header Styles */
+.header {
+    background: #222; /* Dark background for the header */
+    color: #f4f4f4; /* Light text color */
+    padding: 20px 0;
+    font-family: 'Nunito', sans-serif; /* Default font */
+    text-align: center;
+    border: 2px solid rgb(10, 10, 10);
+}
+
+.website-title {
+    font-family: 'Russo One', sans-serif; /* Custom font for the title */
+    font-size: 24px;
+    margin: 0;
+    color: #f4f4f4; /* Light text color */
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #212121, #2d2d2d); /* Gradient background */
+    color: #f0f0f0; /* Light text color */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer Menu */
+.footer-menu {
+    margin-bottom: 30px;
+}
+
+.footer-menu-item {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative; /* Required for the underline animation */
+    overflow: hidden; /* Ensures underline is contained within text */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background-color: #00aaff; /* Blue underline */
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-menu-item:hover::after {
+    width: 100%;
+}
+
+/* Social Media Icons */
+.footer-social {
+    margin-bottom: 30px;
+}
+
+.footer-social-icon {
+    margin: 0 15px;
+    display: inline-block;
+    border-radius: 50%; /* Circular icons */
+    background: #333;
+    padding: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative; /* Required for the underline animation */
+    overflow: hidden; /* Ensures underline is contained within icon */
+}
+
+.footer-social-icon::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00aaff; /* Blue underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icon:hover {
+    background: #555; /* Lighter background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.footer-social-icon:hover::before {
+    transform: scaleX(1); /* Show underline on hover */
+}
+
+.footer-social-icon i {
+    color: #f0f0f0; /* Icon color */
+    font-size: 24px; /* Size of the icons */
+}
+
+/* Copyright */
+.footer-copyright {
+    font-size: 14px;
+    color: #bbb; /* Slightly grayish text color */
+}
+  
