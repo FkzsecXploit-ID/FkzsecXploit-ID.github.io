@@ -1,0 +1,78 @@
+/* Styling untuk Checkbtn dan Dark Mode Button pada Mode Mobile */
+.checkbtn {
+    display: none; /* Default hidden, hanya tampil pada mode mobile */
+}
+
+.dark-mode-btn {
+    display: none; /* Default hidden, hanya tampil pada mode mobile */
+}
+
+/* Mode mobile */
+@media (max-width: 600px) {
+    .checkbtn {
+        display: block; /* Menampilkan checkbtn pada mode mobile */
+        position: absolute;
+        right: 60px; /* Menempatkan checkbtn sedikit lebih ke kiri untuk memberi ruang pada dark mode button */
+        top: 15px; 
+        z-index: 11; 
+        font-size: 30px; 
+        cursor: pointer; 
+    }
+
+    .dark-mode-btn {
+        display: block; /* Menampilkan tombol dark mode pada mode mobile */
+        position: absolute;
+        right: 10px; 
+        top: 15px; 
+        z-index: 11; 
+        font-size: 30px; 
+        cursor: pointer; 
+    }
+
+    .ul-navbar {
+        display: flex; /* Menampilkan menu saat checkbox dicentang */
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute; /* Memastikan menu berada di luar container-navbar */
+        top: 70px; /* Menempatkan menu tepat di bawah navbar */
+        left: -100%;
+        z-index: 10; /* Menempatkan menu di atas konten lainnya */
+        box-shadow: 0 2px 6px 0 rgb(0, 0, 0); 
+        padding-top: 10px; 
+        height: auto;
+        transition: left 0.3s ease; /* Transisi lebih halus untuk animasi */
+    }
+
+    #check:checked ~ .ul-navbar {
+        left: 0;
+    }
+
+    .dark-mode-btn-desktop {
+        display: none; /* Menyembunyikan tombol dark mode pada mode mobile */
+    }
+
+    .logo {
+        height: 40px;
+        margin-right: 7px;
+        padding: 0px;
+        margin-left: -1em;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .li-navbar {
+        font-size: 10px;
+        padding: 10px 0; 
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Menjaga logo dan judul berada di kiri */
+        flex: 1;
+        width: 100%;
+    }
+}

@@ -1,0 +1,150 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.aninu a {
+    color: #353535;
+    transition: all 200ms;
+}
+
+.aninu a:hover {
+    color: #0088cc;
+}
+
+/* Styling umum untuk body */
+body {
+    background-color: #f0f0f0;
+    padding-top: 70px; /* Tinggi navbar untuk membuat konten di bawahnya tidak tertutup */
+}
+
+.container-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 6px 0 rgb(0, 0, 0);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    transition: top 0.3s ease-in-out; /* Efek transisi saat navbar di-scroll */
+}
+
+.a-navbar {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Navbar Item Styling */
+.ul-navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li-navbar {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.li-navbar a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 0 10px; /* Menyesuaikan jarak horizontal antara item navbar */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.li-navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background-color: #17a2b8;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.li-navbar a:hover::after {
+    width: 100%;
+}
+
+.li-navbar a:not(:hover)::after {
+    width: 0;
+}
+
+
+/* Logo dan Title Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+@media (max-width: 600px) {
+    .ul-navbar {
+        display: none; /* Menyembunyikan menu pada mode mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .ul-navbar.active {
+        display: flex; /* Menampilkan menu saat aktif */
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .li-navbar {
+        font-size: 10px;
+    }
+    .title {
+        font-size: 10px;
+    }
+    .logo {
+        height: 40px;
+        margin-right: 7px;
+        padding: 0px;
+        margin-left: -1em;
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+}

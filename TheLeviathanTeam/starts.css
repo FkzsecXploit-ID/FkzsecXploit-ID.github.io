@@ -1,0 +1,20 @@
+.starts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+}
+.slider-container {
+    flex: 1;
+    margin-right: 20px; /* Jarak antara slider dan teks */
+}
+.text-container {
+    flex: 1;
+}
+#jssor_1 {
+    max-width: 100%;
+    height: auto;
+}

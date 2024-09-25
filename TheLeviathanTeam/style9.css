@@ -1,0 +1,217 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #000;
+    padding-top: 70px; /* Tinggi navbar untuk membuat konten di bawahnya tidak tertutup */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .container-navbar {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .ul-navbar {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .a-navbar {
+    color: #e0e0e0;
+}
+
+.dark-mode .a-navbar:hover {
+    color: #80cbc4;
+}
+
+.aninu a {
+    color: #353535;
+    transition: all 200ms;
+}
+
+.aninu a:hover {
+    color: #0088cc;
+}
+
+.container-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 6px 0 rgb(0, 0, 0);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    transition: top 0.3s ease-in-out; /* Efek transisi saat navbar di-scroll */
+}
+
+.a-navbar {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.ul-navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li-navbar {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.li-navbar a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 0 10px; /* Menyesuaikan jarak horizontal antara item navbar */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.li-navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background-color: #17a2b8;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.li-navbar a:hover::after {
+    width: 100%;
+}
+
+.li-navbar a:not(:hover)::after {
+    width: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Membuat logo-container mengambil ruang yang tersedia */
+    justify-content: flex-start; /* Menempatkan logo di kiri */
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+#menu-check {
+    display: none;
+}
+
+
+
+.checkbtn, .dark-mode-btn, .dark-mode-btn-desktop {
+    display: none; /* Menyembunyikan checkbtn pada mode desktop */
+}
+
+/* Mode mobile */
+@media (max-width: 600px) {
+    .checkbtn {
+        display: block; /* Menampilkan checkbtn pada mode mobile */
+        position: absolute;
+        right: 50px;
+        top: 15px; 
+        z-index: 11; 
+        font-size: 30px; 
+        cursor: pointer; 
+    }
+
+    .dark-mode-btn {
+        display: block; /* Menampilkan tombol dark mode pada mode mobile */
+        position: absolute;
+        right: 10px;
+        top: 15px; 
+        z-index: 11; 
+        font-size: 30px; 
+        cursor: pointer; 
+    }
+
+    .ul-navbar {
+        display: flex; /* Menampilkan menu saat checkbox dicentang */
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute; /* Memastikan menu berada di luar container-navbar */
+        top: 70px; /* Menempatkan menu tepat di bawah navbar */
+        left: -100%;
+        z-index: 10; /* Menempatkan menu di atas konten lainnya */
+        box-shadow: 0 2px 6px 0 rgb(0, 0, 0); 
+        padding-top: 10px; 
+        transition: left 0.3s ease; /* Transisi lebih halus untuk animasi */
+    }
+
+    #menu-check:checked ~ .ul-navbar {
+        left: 0;
+    }
+
+    .logo {
+        height: 40px;
+        margin-right: 7px;
+        padding: 0px;
+        margin-left: -1em;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .li-navbar {
+        font-size: 10px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Menjaga logo dan judul berada di kiri */
+        flex: 1;
+        width: 100%;
+    }
+}
+
+/* Mode desktop */
+@media (min-width: 601px) {
+    .dark-mode-btn-desktop {
+        display: block; /* Menampilkan tombol dark mode pada mode desktop */
+        cursor: pointer;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}

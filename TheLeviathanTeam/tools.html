@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta property="og:description" content="Leviathan404 Blogspot"/>
+    <meta property="og:title" content="Leviathan404 Blog"/>
+    <meta property="og:type" content="website"/>
+    <link rel="icon" href="images/file.png" type="image/x-icon"/>
+    <title>Tools - Lev404Blogspot</title>
+    <link rel="stylesheet" href="style8.css">
+    <!-- <link rel="stylesheet" href="tools.css"> -->
+    <script src="https://kit.fontawesome.com/f8b8dbf1ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body>
+    <div class="container-navbar">
+        <input type="checkbox" id="dark-mode-toggle">
+        <label for="dark-mode-toggle" class="dark-mode-btn">
+            <i class="fas fa-moon"></i>
+        </label>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-list"></i>
+        </label>
+
+
+        <div class="logo-container">
+            <img src="./images/logo.png" alt="Logo" class="logo">
+            <h1 class="title">Leviathan404 Blogspot</h1>
+        </div>
+        <ul class="ul-navbar">
+            <li class="li-navbar"><a href="./home.html" class="a-navbar">Home</a></li>
+            <li class="li-navbar"><a href="./contact_us/index.html" class="a-navbar">Contact Me</a></li>
+            <li class="li-navbar"><a href="./abouts/index.html" class="a-navbar">About</a></li>
+            <li class="li-navbar"><a href="./materi/material.html" class="a-navbar">Materi</a></li>
+            <li class="li-navbar">
+                <label for="dark-mode-toggle" class="dark-mode-btn-desktop">
+                    <i class="fas fa-moon"></i>
+                </label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="seacrh-cont">
+        <div class="searchbar">
+            <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+            <i class="fa-solid fa-magnifying-glass glass"></i>
+        </div>
+    </div>
+    <div id="root">
+        <!-- Dynamic content will be injected here by script.js -->
+    </div>
+
+    <script src="script.js"></script>
+
+        <!-- Header -->
+        <header class="header">
+            <h1 class="website-title">Leviathan404TeamCyber Blogspot</h1>
+        </header>
+    
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Footer Menu -->
+                <div class="footer-menu">
+                    <a href="./abouts/index.html" class="footer-menu-item">About Us</a>
+                    <a href="#" class="footer-menu-item">Tools</a>
+                    <a href="./contact_us/index.html" class="footer-menu-item">Contact</a>
+                </div>
+    
+                <!-- Social Media Icons -->
+                <div class="footer-social">
+                    <a href="https://www.tiktok.com/@fkzzzsecurityxz" target="_blank" class="footer-social-icon" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://github.com/DestroyerLinuxpropaly" target="_blank" class="footer-social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://t.me/lviathan404" target="_blank" class="footer-social-icon" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2024 Leviathan404TeamCyber Blogspot. All rights reserved.
+            </div>
+        </footer>
+        
+        <script src="https://api.kezt.my.id/show-transition.js"></script>
+        <script src="./slick-master/js/jquery.min.js"></script>
+          <script src="./slick-master/js/slick.min.js"></script>
+          <script src="./slick-master/js/main.js"></script>
+          <script src="./script.js"></script>
+    
+        <script>
+            // JavaScript untuk toggle dark mode
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+    
+            darkModeToggle.addEventListener('change', () => {
+                body.classList.toggle('dark-mode', darkModeToggle.checked);
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/5ceafb9386.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

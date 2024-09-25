@@ -1,0 +1,1351 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.aninu a {
+    color: #353535;
+    transition: all 200ms;
+}
+
+.aninu a:hover {
+    color: #0088cc;
+}
+
+/* Styling umum untuk body */
+body {
+    background-color: #f0f0f0;
+    padding-top: 70px; /* Tinggi navbar untuk membuat konten di bawahnya tidak tertutup */
+}
+
+h3 {
+    font-family: 'Russo One', sans-serif; 
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 100%; /* Lebar maksimum kontainer, sesuaikan sesuai kebutuhan */
+    margin: 0 auto; /* Memusatkan kontainer secara horizontal */
+}
+
+.dark-mode .cont {
+    background-color: #000000;
+}
+
+.dark-mode .p-d-f {
+    color: white;
+}
+
+/* Gambar di Atas Teks */
+.image-home {
+    width: 100%; /* Membuat gambar memenuhi lebar kontainer */
+    max-width: 600px; /* Menentukan lebar maksimum gambar jika diperlukan */
+    height: auto; /* Memastikan gambar tetap proporsional */
+    object-fit: cover; /* Menjaga proporsi gambar dengan memotong bagian yang berlebih */
+    display: block; /* Menghilangkan ruang ekstra di bawah gambar */
+    margin-right: 39em;
+    border: #003d4b solid;
+    border-radius: 12px;
+}
+
+/* Teks di Sebelah Kiri */
+.p-d-f {
+    padding-left: 20px; /* Menambahkan jarak antara teks dan tepi kiri kontainer */
+    padding-right: 20px; /* Menambahkan jarak antara teks dan tepi kanan kontainer */
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin: 10px 0; /* Menambahkan jarak vertikal antara paragraf dan elemen lainnya */
+    line-height: 1.5; /* Menambahkan jarak antar baris untuk keterbacaan yang lebih baik */
+    text-align: left; 
+}
+
+.code-container-main {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: left;
+    
+}
+
+
+
+.code-container {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 20px;
+    width: 80%;
+    height: 60vh;
+    max-width: 600px;
+    overflow-x: auto;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.code-container pre {
+    margin: 0;
+    text-align: left;
+
+}
+.code-container code {
+    display: block;
+    color: green;
+    white-space: pre;
+    text-align: left;
+
+}
+
+.code-container2 {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 20px;
+    width: 80%;
+    height: 60vh;
+    max-width: 600px;
+    text-align: left;
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.code-container2 pre {
+    margin: 0;
+    text-align: left;
+}
+.code-container2 code {
+    display: block;
+    color: green;
+    white-space: pre;
+    text-align: left;
+}
+
+/* Media Queries untuk Mode Mobile */
+@media (max-width: 768px) {
+    /* Aturan untuk ukuran layar lebih kecil */
+    
+    .image-home {
+        width: 100%;
+        max-width: 100%; /* Menghapus lebar maksimum gambar */
+        margin-right: 0; /* Menghapus margin kanan untuk gambar pada perangkat mobile */
+    }
+
+    .p-d-f {
+        font-size: 14px; /* Menyesuaikan ukuran font untuk perangkat mobile */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .code-container, .code-container2 {
+        width: 100%; /* Menyesuaikan lebar kontainer kode untuk perangkat mobile */
+        height: auto; /* Mengatur tinggi kontainer kode otomatis berdasarkan konten */
+    }
+}
+
+
+.sec-1 .show-animate .img-anm {
+    animation: animate 1s;
+    opacity: 1;
+}
+@keyframes animate {
+    0% {
+        transform: translateY(2.3em);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------- */
+
+    .body{      
+    /* min-height: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    height: 120vh;
+    }
+
+    .dark-mode .body {
+        background-color: #000000;
+        color: #e0e0e0;
+    }
+  
+    
+    .slide-container{
+      max-width: 1120px;
+      width: 100%;
+      padding: 40px 0;
+    }
+    .slide-content{
+      margin: 0 40px;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+    .card{
+      border-radius: 27px;
+      background-color: rgb(255, 255, 255);
+      border: solid cyan; 
+      animation: cartu 1s infinite linear;
+    }
+
+    .dark-mode .card {
+        background-color: #000000;
+    }
+    
+    @keyframes cartu {
+      0% {
+        border: solid #ff2770;
+      }
+      50% {
+        border: solid cyan;
+      }
+      100% {
+        border: solid #ff2770;
+      }
+    }
+    
+    
+    @keyframes rotate {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+    }
+    
+    .image-content,
+    .card-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 14px;
+    
+    }
+    .image-content{
+      position: relative;
+      row-gap: 5px;
+      padding: 25px 0;
+    }
+    .overlay{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #4070F4;
+      border-radius: 25px 25px 0 25px;
+    }
+    .overlay::before,
+    .overlay::after{
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -40px;
+      height: 40px;
+      width: 40px;
+      background-color: #4070F4;
+    }
+    .overlay::after{
+      border-radius: 0 25px 0 0;
+      background-color: rgb(255, 255, 255);
+    
+    }
+
+    .dark-mode .overlay::after {
+        background-color: #000000;
+    }
+    /* .card-image{
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background: #4070F4;
+      padding: 3px;
+    } */
+    /* 
+    .card-image::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      border-radius: 50%;
+      border: 5px solid transparent;
+      border-top-color: black;
+      border-right-color: cyan;
+      border-bottom-color: black;
+      border-left-color: cyan;
+      animation: spin 2s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    } */
+    
+    .card-image {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background: #4070F4;
+      padding: 3px;
+      box-shadow: 0 0 20px rgba(0, 255, 170, 0.7), 0 0 40px rgba(0, 255, 170, 0.7), 0 0 60px rgba(0, 255, 170, 0.7);
+      animation: neon-glow 1.5s infinite alternate;
+    }
+    
+    .card-image::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      border-radius: 50%;
+      border: 5px solid transparent;
+      border-top-color: #000000;
+      border-right-color: cyan;
+      border-bottom-color: #000000;
+      border-left-color: cyan;
+      animation: spin 2s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    } 
+      
+    
+    @keyframes neon-glow {
+      0% {
+        box-shadow: 0 0 10px rgba(0, 255, 170, 0.5), 0 0 20px rgba(0, 255, 170, 0.5), 0 0 30px rgba(0, 255, 170, 0.5);
+      }
+      100% {
+        box-shadow: 0 0 20px rgba(0, 255, 170, 0.7), 0 0 40px rgba(0, 255, 170, 0.7), 0 0 60px rgba(0, 255, 170, 0.7);
+      }
+    }
+    
+    .card-image .card-img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #4070F4;
+    }
+    .name{
+      font-size: 18px;
+      font-weight: 500;
+      /* color: #333; */
+      color: rgb(0, 0, 0);
+      text-shadow: 0 0 5px rgb(255, 0, 0), 
+      0 0 10px brown, 
+      0 0 15px cyan, 
+      0 0 20px cyan, 
+      0 0 25px cyan, 
+      0 0 30px cyan, 
+      0 0 35px cyan;
+    /* animation: neon-glow-text 1.5s infinite alternate;}
+    
+    @keyframes neon-glow-text {
+      0% {
+        text-shadow: 0 0 5px cyan, 
+                     0 0 10px cyan, 
+                     0 0 15px cyan, 
+                     0 0 20px cyan, 
+                     0 0 25px cyan, 
+                     0 0 30px cyan, 
+                     0 0 35px cyan;
+      }
+      100% {
+        text-shadow: 0 0 10px cyan, 
+                     0 0 20px cyan, 
+                     0 0 30px cyan, 
+                     0 0 40px cyan, 
+                     0 0 50px cyan, 
+                     0 0 60px cyan, 
+                     0 0 70px cyan;
+      }
+    } */
+    }
+    .description{
+      font-size: 14px;
+      color: #515050;
+      text-align: center;
+    }
+    .button{
+      border: solid cyan;
+      font-size: 16px;
+      color: cyan;
+      padding: 8px 16px;
+      background-color: transparent;
+      border-radius: 100px;
+      margin: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .button:hover{
+      background: cyan;
+      color: white;
+    }
+    .swiper-navBtn{
+      color: #6E93f7;
+      transition: color 0.3s ease;
+    }
+    .swiper-navBtn:hover{
+      color: #4070F4;
+    }
+    .swiper-navBtn::before,
+    .swiper-navBtn::after{
+      font-size: 35px;
+    }
+    .swiper-button-next{
+      right: 0;
+    }
+    .swiper-button-prev{
+      left: 0;
+    }
+    .swiper-pagination-bullet{
+      background-color: #6E93f7;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+      background-color: #4070F4;
+    }
+    @media screen and (max-width: 768px) {
+      .slide-content{
+        margin: 0 10px;
+      }
+      .swiper-navBtn{
+        display: none;
+      }
+    }
+
+/* ---------------------------------- */
+.logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+  }
+  
+  .container-tables {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 30vh;
+    margin-bottom: 18px;
+    padding-top: 20px; 
+}
+
+.tables {
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    width: 45em;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.dark-mode .tables {
+    background-color: #141414;
+    border: #005177 solid;
+}
+
+h5 {
+    color: #000000;
+    font-size: 30px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin: 15px;
+    border-radius: 10px; 
+}
+
+.dark-mode h5 {
+    color: white;
+}
+
+
+.image-text-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.images {
+    width: 300px; 
+    height: 150px; 
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.additional-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    font-size: 16px;
+    text-align: left;
+}
+
+.dark-mode .additional-text {
+    color: rgb(75, 75, 75);
+}
+
+.button-cont a {
+    display: flex;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+.seacrh-cont {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.searchbar {
+    margin-top: 30px;
+    width: 30%;
+    background-color: #eee;
+    border: #005177 solid;
+    border-radius: 300px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dark-mode input {
+    color: white;
+}
+
+.dark-mode .searchbar {
+    background-color: #141414;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.glass {
+    color: #aaa;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 30vh;
+    margin-bottom: 18px;
+    padding-top: 20px; 
+}
+
+/* Media Queries untuk Mode Mobile */
+@media only screen and (max-width: 768px) {
+    .tables {
+      width: 90%; /* Mengatur lebar card agar lebih kecil di layar mobile */
+      margin: 0 auto; /* Menyusun card di tengah */
+    }
+  
+    .image-text-wrapper {
+      flex-direction: column; /* Menyusun gambar dan teks secara vertikal */
+      align-items: center; /* Menyusun item di tengah */
+    }
+  
+    .images {
+      width: 100%; 
+      height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+      margin-right: 0; /* Menghapus margin kanan pada gambar */
+      margin-bottom: 15px; /* Menambah jarak bawah pada gambar */
+    }
+  
+    .additional-text {
+      font-size: 14px; /* Mengurangi ukuran font pada mobile */
+    }
+  
+    .searchbar {
+      width: 100%; /* Memperlebar search bar untuk menyesuaikan lebar layar */
+      padding: 10px; /* Menambah padding agar lebih nyaman di layar kecil */
+    }
+  
+    .button-87 {
+      padding: 10px 20px; /* Mengurangi padding tombol untuk layar kecil */
+      font-size: 14px; /* Mengurangi ukuran font tombol */
+    }
+  
+    .title {
+      font-size: 20px; /* Mengurangi ukuran font judul untuk layar kecil */
+    }
+  
+    .logo {
+      height: 40px; /* Mengurangi tinggi logo untuk layar kecil */
+    }
+  
+    .container-tables {
+      min-height: 20vh; /* Mengurangi tinggi minimum container pada layar kecil */
+      padding-top: 10px; /* Mengurangi padding atas pada layar kecil */
+    }
+  }
+  
+  
+
+/* ---------------------------------- */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+.card2 {
+    background: #fff; 
+    border: 2px solid #ddd;
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /
+}
+
+
+.card2:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card-img2 {
+    width: 100%; 
+    height: 290px; 
+    object-fit: cover;
+}
+
+.card-img3 {
+    width: 100%; 
+    height: 290px; 
+    object-fit: cover;
+    background-color: black;
+}
+
+
+
+.card-content2 {
+    padding: 15px;
+}
+
+.card-title2 {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+}
+
+.card-description2 {
+    font-size: 14px; 
+    color: #555; 
+    height: 61px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        gap: 10px;
+    }
+    
+    .card {
+        width: 100%;
+    }
+}
+
+h4 {
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+/* ---------------------------------- */
+.promo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 1000px; 
+}
+
+.promo-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.promo-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.promo-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    width: 100%;
+}
+
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: #ffffff; 
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 260px; 
+    text-align: center;
+    margin-bottom: 20px; 
+    flex: 1; 
+}
+
+@media (min-width: 768px) {
+    .promo-cards {
+        flex-wrap: nowrap; 
+    }
+}
+
+@media (max-width: 767px) {
+    .promo-card {
+        max-width: 100%; 
+    }
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #005177; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+.card-button:hover {
+    border: solid 1.3px #005177;
+    background-color: transparent;
+    color: #0073aa;
+    transform: translateY(-2px);
+}
+
+.card-button:active {
+    background-color: #003d4b; 
+    transform: translateY(0);
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #212121, #2d2d2d);
+    color: #f0f0f0; 
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer Menu */
+.footer-menu {
+    margin-bottom: 30px;
+}
+
+.footer-menu-item {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative; 
+    overflow: hidden; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background-color: #00aaff; 
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-menu-item:hover::after {
+    width: 100%;
+}
+
+.footer-social {
+    margin-bottom: 30px;
+}
+
+.footer-social-icon {
+    margin: 0 15px;
+    display: inline-block;
+    border-radius: 50%; 
+    background: #333;
+    padding: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden; 
+}
+
+.footer-social-icon::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00aaff; 
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icon:hover {
+    background: #555; 
+    transform: scale(1.1);
+}
+
+.footer-social-icon:hover::before {
+    transform: scaleX(1); 
+}
+
+.footer-social-icon i {
+    color: #f0f0f0; 
+    font-size: 24px; 
+}
+
+/* Copyright */
+.footer-copyright {
+    font-size: 14px;
+    color: #bbb; 
+}
+
+
+.container-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 6px 0 rgb(0, 0, 0);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    transition: top 0.3s ease-in-out; 
+}
+
+
+/* Header Styles */
+.header {
+    background: #222; 
+    color: #f4f4f4; 
+    padding: 20px 0;
+    font-family: 'Nunito', sans-serif; 
+    text-align: center;
+    border: 2px solid rgb(10, 10, 10);
+}
+
+.website-title {
+    font-family: 'Russo One', sans-serif; 
+    font-size: 24px;
+    margin: 0;
+    color: #f4f4f4;
+}
+
+
+
+.a-navbar {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.ul-navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li-navbar {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.li-navbar a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 0 10px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.li-navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background-color: #17a2b8;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.li-navbar a:hover::after {
+    width: 100%;
+}
+
+.li-navbar a:not(:hover)::after {
+    width: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    justify-content: flex-start; 
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+.border-box-container2 {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.border-box2 {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.border-box-content2 {
+    padding: 20px;
+    width: 100%; /* Konten mengambil 60% dari lebar border-box */
+}
+
+
+
+/* Styling untuk Border Box Container */
+.border-box-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling untuk Border Box */
+.border-box {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Styling untuk Gambar di Border Box */
+.border-box-img {
+    width: 40%; /* Gambar mengambil 40% dari lebar border-box */
+    object-fit: cover; /* Menjaga rasio gambar dan mengisi area */
+}
+
+/* Styling untuk Konten Border Box */
+.border-box-content {
+    padding: 20px;
+    width: 60%; /* Konten mengambil 60% dari lebar border-box */
+}
+
+.border-box-title {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.border-box-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+.border-box-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.border-box-link:hover {
+    text-decoration: underline;
+}
+
+.dark-mode {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.dark-mode .promo-card {
+    background-color: #131313;
+    color: white;
+}
+
+.dark-mode .promo-title {
+    color: white;
+}
+
+.dark-mode .card-title {
+    color: white;
+}
+
+.dark-mode .promo-card {
+    border: #0073aa solid;
+}
+
+.dark-mode .border-box2 {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border: #353535 solid;
+}
+
+.dark-mode .border-box {
+    background-color: #131313;
+    color: white;
+    border: #353535 solid;
+}
+
+.dark-mode-btn .ul-navbar{
+    display: block;
+    position: absolute;
+    right: 10px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    top: 15px; 
+    z-index: 11; 
+    font-size: 30px; 
+    cursor: pointer; 
+}
+
+/* Menyembunyikan checkbox itu sendiri */
+#check, #dark-mode-toggle {
+    display: none;
+}
+
+/* .checkbtn {
+    display: none; 
+} */
+
+.checkbtn, .dark-mode-btn {
+    display: none; 
+}
+
+.dark-mode .card2 {
+    background-color: #141414;
+    border: #005177 solid;
+}
+
+.dark-mode body {
+    background-color: #141414;
+    color: #e0e0e0;
+}
+
+.dark-mode .container-navbar {
+    background-color: #141414;
+}
+
+.dark-mode .ul-navbar {
+    background-color: #141414;
+}
+
+.dark-mode .a-navbar {
+    color: #e0e0e0;
+}
+
+/* .dark-mode .a-navbar:hover {
+    color: #80cbc4;
+} */
+
+.dark-mode-btn-desktop {
+    display: block; /* Menampilkan tombol dark mode pada mode desktop */
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* Mode mobile */
+@media (max-width: 600px) {
+    /* .checkbtn {
+        display: block; 
+        position: absolute;
+        right: 10px; 
+        top: 15px; 
+        z-index: 11; 
+        font-size: 30px; 
+        cursor: pointer; 
+    } */
+
+       /* Header */
+       .header {
+        padding: 10px 0; /* Reduced padding */
+    }
+    
+    .website-title {
+        font-size: 18px; /* Adjusted font size */
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px 0; /* Reduced padding */
+    }
+
+    .footer-container {
+        padding: 0 10px; /* Adjusted padding */
+    }
+
+    .footer-menu-item {
+        margin: 0 10px; /* Adjusted margin */
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .footer-social-icon {
+        margin: 0 10px; /* Adjusted margin */
+        padding: 8px; /* Adjusted padding */
+    }
+
+    .footer-social-icon i {
+        font-size: 20px; /* Adjusted icon size */
+    }
+
+    .footer-copyright {
+        font-size: 12px; /* Adjusted font size */
+    }
+
+
+    .border-box {
+        flex-direction: column; /* Gambar di atas konten di mode mobile */
+    }
+
+    .border-box-img {
+        width: 100%; /* Gambar mengambil seluruh lebar di mode mobile */
+    }
+
+    .border-box-content {
+        width: 100%; /* Konten mengambil seluruh lebar di mode mobile */
+    }
+
+    .checkbtn {
+        display: block; /* Menampilkan checkbtn pada mode mobile */
+        position: absolute;
+        right: 60px; /* Tempatkan checkbtn sedikit lebih ke kiri untuk memberi ruang pada dark mode button */
+        top: 15px; 
+        z-index: 11; 
+        font-size: 30px; 
+        cursor: pointer; 
+    }
+
+    .dark-mode-btn {
+        display: block; /* Menampilkan tombol dark mode pada mode mobile */
+        position: absolute;
+        right: 10px; 
+        top: 15px; 
+        z-index: 11; 
+        font-size: 30px; 
+        cursor: pointer; 
+    }
+
+    .ul-navbar {
+        display: flex; /* Menampilkan menu saat checkbox dicentang */
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute; /* Memastikan menu berada di luar container-navbar */
+        top: 70px; /* Menempatkan menu tepat di bawah navbar */
+        left: -100%;
+        z-index: 10; /* Menempatkan menu di atas konten lainnya */
+        box-shadow: 0 2px 6px 0 rgb(0, 0, 0); 
+        padding-top: 10px; 
+        height: auto;
+        transition: left 0.3s ease; /* Transisi lebih halus untuk animasi */
+    }
+
+    #check:checked ~ .ul-navbar {
+        left: 0;
+    }
+    .dark-mode-btn-desktop {
+        display: none;
+    }
+
+    .logo {
+        height: 40px;
+        margin-right: 7px;
+        padding: 0px;
+        margin-left: -1em;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .li-navbar {
+        font-size: 10px;
+        padding: 10px 0; 
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Menjaga logo dan judul berada di kiri */
+        flex: 1;
+        width: 100%;
+    }
+
+
+}
